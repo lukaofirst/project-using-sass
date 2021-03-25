@@ -1,0 +1,21 @@
+@media (max-width: 768px) {
+    .trabalho-single {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .trabalho-img, .wraper-descricao {
+        width: 100%;
+        max-width: 550px;
+    }
+
+    .box-faq {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .numeros-contato, .form {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,27 @@
+$first-color : #1a1a1a;
+$second-color : #ffffff;
+$third-color: #3f7aff;
+$fourth-color: #4d533c;
+$fifth-color: #cccccc;
+$sixth-color: rgba(33,56,66,0.6);
+$font-stack: 'Poppins', sans-serif;
+
+@mixin setDisplay($value){
+    display: $value;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin set-background($color) {
+    background-color: $color;
+    color: set-text-color($color);
+}
+
+@function set-text-color($color) {
+    @if(lightness($color) > 70) {
+        @return #333;
+    } @else {
+        @return #fff;
+    }
+}
