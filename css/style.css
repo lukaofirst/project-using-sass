@@ -27,7 +27,7 @@
   margin: 40px auto;
 }
 
-section.contato .form input[type=text], section.contato .form textarea {
+section.contato .contato-container .form input[type=text], section.contato .contato-container .form textarea {
   width: 100%;
   border: 1px solid #cccccc;
   border-radius: 4px;
@@ -74,7 +74,7 @@ section.trabalhos .trabalho-single {
 }
 
 section.trabalhos .trabalho-single .trabalho-img {
-  width: 50%;
+  width: 600px;
   padding: 50px;
   background-color: #3f7aff;
 }
@@ -84,7 +84,7 @@ section.trabalhos .trabalho-single .trabalho-img img {
 }
 
 section.trabalhos .trabalho-single .wraper-descricao {
-  width: 50%;
+  width: 600px;
   padding: 10px 20px;
   text-align: center;
 }
@@ -178,47 +178,56 @@ section.contato h2 {
   color: #1a1a1a;
 }
 
-section.contato .numeros-contato {
-  width: 50%;
-  padding: 0 30px;
+section.contato .contato-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
-section.contato .numeros-contato h3 {
+section.contato .contato-container .numeros-contato {
+  width: 600px;
+  padding: 0 30px;
+  text-align: center;
+}
+
+section.contato .contato-container .numeros-contato h3 {
   font-size: 25px;
   color: #cccccc;
 }
 
-section.contato .numeros-contato p {
+section.contato .contato-container .numeros-contato p {
   color: rgba(33, 56, 66, 0.6);
   font-size: 16px;
   text-decoration: underline;
 }
 
-section.contato .form {
-  width: 50%;
+section.contato .contato-container .form {
+  width: 600px;
+  margin-top: 30px;
   padding: 0 20px;
 }
 
-section.contato .form p {
+section.contato .contato-container .form p {
   font-size: 14px;
   font-weight: bold;
   color: rgba(33, 56, 66, 0.6);
   margin-bottom: 8px;
 }
 
-section.contato .form input[type=text] {
+section.contato .contato-container .form input[type=text] {
   margin-bottom: 8px;
   height: 40px 0;
   padding: 10px;
 }
 
-section.contato .form textarea {
+section.contato .contato-container .form textarea {
   height: 100px;
   resize: none;
   padding: 10px;
 }
 
-section.contato .form input[type=submit] {
+section.contato .contato-container .form input[type=submit] {
   width: 100%;
   height: 30px;
   color: #ffffff;
@@ -239,10 +248,6 @@ footer {
   .trabalho-single {
     align-items: center;
     justify-content: center;
-  }
-  .trabalho-img, .wraper-descricao {
-    width: 100%;
-    max-width: 550px;
   }
   .box-faq {
     width: 100%;
